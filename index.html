@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.ico?v=2">
 
   <!--
     - custom css link
@@ -660,6 +660,42 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
+                  <img src="./assets/images/project-7.png" alt="FinAI" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FinAI - AI Budget Advisor</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.png" alt="FarmAI" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FarmAi</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
                   <img src="./assets/images/project-1.jpg" alt="PulsePay" loading="lazy">
                 </figure>
 
@@ -767,40 +803,45 @@
       </article>
 
 
-      <!--
-        - #CONTACT
-      -->
+      <!-- #CONTACT -->
 
-      <article class="contact" data-page="contact">
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Connect</h2>
+  </header>
 
-        <header>
-          <h2 class="h2 article-title">Connect</h2>
-        </header>
-        <script>
-          function copyEmail() {
-            const email = "himanshujagtap05@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-              const message = document.getElementById("copy-message");
-              message.classList.add("show");
+  <p class="about-text">
+    I’m always excited to connect with like-minded people and work on collaborative projects.  
+    If you’ve got an idea, I’d love to hear it — maybe I can contribute in a meaningful way.  
+    I also enjoy helping others solve problems related to my skills, so feel free to reach out.  
+    <br><br>
+    Looking to collaborate? Let’s talk!  
+    <br>
+    <strong>Email:</strong> <span id="email-text">himanshujagtap05@gmail.com</span>
+  </p>
 
-              setTimeout(() => {
-                message.classList.remove("show");
-              }, 3000); // Hide after 3 seconds
-            });
-          }
-        </script>
+  <script>
+    function copyEmail() {
+      const email = "himanshujagtap05@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const message = document.getElementById("copy-message");
+        message.classList.add("show");
+        setTimeout(() => {
+          message.classList.remove("show");
+        }, 3000);
+      });
+    }
+  </script>
 
+  <button class="golden-btn" onclick="copyEmail()">
+    <ion-icon name="paper-plane"></ion-icon>
+    Copy Email
+  </button>
 
-
-          <button class="golden-btn" onclick="copyEmail()">
-              <ion-icon name="paper-plane"></ion-icon>
-              Send Message
-            </button>
-
-          <!-- Message container -->
-          <div id="copy-message" class="copy-toast">Email copied! Send an email to: himanshujagtap05@gmail.com</div>
-
-
+  <div id="copy-message" class="copy-toast">
+    Email copied! Send an email to: himanshujagtap05@gmail.com
+  </div>
+</article>
 
 
         <!-- <section class="contact-form">
